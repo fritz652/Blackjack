@@ -10,6 +10,13 @@ const crearDeck = () => {
         }
     }
 
+    for (let tipo of tipos){ 
+        for (let esp of especiales){
+            deck.push(esp + tipo);
+        }
+    }
+    console.log(deck);
+    deck = _.shuffle(deck); // Barajar el deck usando lodash
     console.log(deck);
 }
 
